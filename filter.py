@@ -17,10 +17,9 @@ i=1
 for filename in fileOfDirectory:
     if fnmatch.fnmatch(filename, pattern):
             
-          #  print(filename)
             os.chdir(directory)
             size = os.stat(filename).st_size
-          #  print(size)
+
             print("============================================")
             print("||File    ||",i)
             print("||Filename||",filename,"")
