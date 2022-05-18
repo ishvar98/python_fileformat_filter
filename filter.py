@@ -3,7 +3,7 @@
 import os, fnmatch
 
 #Replace directory path name in ""
-directory="C:/Users/Selvakumar/Downloads/"
+directory="C:/xxxx/xxxxx/xxxxxx/"
 
 fileOfDirectory = os.listdir(directory)
 
