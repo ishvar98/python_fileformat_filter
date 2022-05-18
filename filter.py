@@ -3,7 +3,7 @@
 import os, fnmatch
 
 #Replace directory path name in ""
-directory="C:/Users/Selvakumar/Downloads/"
+directory="C:/XXXX/XXXX/XXXX/"
 
 fileOfDirectory = os.listdir(directory)
 
@@ -21,11 +21,10 @@ rfmt=fmt.replace("*.","")
 print("Displaying files with extension of",rfmt,"in",directory)
 for filename in fileOfDirectory:
     if fnmatch.fnmatch(filename, pattern):
-            
-          #  print(filename)
+
             os.chdir(directory)
             size = os.stat(filename).st_size
-          #  print(size)
+
             print("============================================")
             print("||File    ||",i)
             print("--------------------------------------------")
